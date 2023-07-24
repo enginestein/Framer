@@ -18,4 +18,4 @@ yarn run release
 
 After building you can go to `dist` folder and you will find the `Framer.exe` file
 
-![Screenshot 2023-07-24 142623](https://github.com/aryavartcreations/Framer/assets/117010357/53a646db-88ec-49cf-b2e1-97952a9c0876)
+![Screenshot 2023-07-24 142623](https://github.com/aryavartcreations/Framer/assets/117010357/ea554faa-dbb9-418f-aa9a-00e7010647e0)
