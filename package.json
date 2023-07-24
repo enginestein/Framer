@@ -1,0 +1,60 @@
+{
+  "name": "Framer",
+  "productName": "Framer",
+  "version": "1.0.0",
+  "main": "src/main/index.js",
+  "scripts": {
+    "start": "MODE=development electron-forge start",
+    "postinstall": "electron-builder install-app-deps",
+    "release": "electron-builder --publish always",
+    "ci:release": "git commit -am v2.1.1 && git tag v2.1.1; git push origin master && git push origin master --tags",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": [],
+  "author": {
+    "name": "Arya Praneil Pritesh",
+    "email": "aryapraneil@gmail.com"
+  },
+  "license": "GPL-3.0",
+  "build": {
+    "appId": "com.aryavart.framer",
+    "productName": "Framer", 
+    "mac": {
+      "category": "public.app-category.utilities"
+    },
+    "dmg": {
+      "icon": "video-solid.svg"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb",
+        "pacman",
+        "freebsd",
+        "rpm"
+      ],
+      "category": "Utilities"
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "portable",
+        "zip"
+      ]
+    }
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.20",
+    "electron-squirrel-startup": "^1.0.0",
+    "fluent-ffmpeg": "^2.1.2"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "6.0.0-beta.50",
+    "@electron-forge/maker-deb": "6.0.0-beta.50",
+    "@electron-forge/maker-rpm": "6.0.0-beta.50",
+    "@electron-forge/maker-squirrel": "6.0.0-beta.50",
+    "@electron-forge/maker-zip": "6.0.0-beta.50",
+    "electron": "8.2.4",
+    "electron-builder": "^22.9.1"
+  }
+}

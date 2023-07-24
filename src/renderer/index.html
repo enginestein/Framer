@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Framer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <script defer src="entry.js"></script>
+  </head>
+  <body class="content">
+    <video></video>
+
+    <button id="startBtn" class="button is-primary" disabled>Start</button>
+    <button id="stopBtn" class="button is-warning" disabled>Stop</button>
+    <button id="saveBtn" class="button is-info" disabled>Save as</button>
+
+    <hr />
+
+    <progress id="saveProgressBar" class="progress is-small is-primary" max="100"></progress>
+
+    <button id="videoSelectBtn" class="button is-text">
+      Select window to record
+    </button>
+  </body>
+</html>
